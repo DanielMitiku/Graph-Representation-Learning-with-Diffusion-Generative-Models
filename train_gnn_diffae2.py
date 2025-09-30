@@ -584,7 +584,7 @@ if __name__ == "__main__":
         print("Evaluating model...", flush=True)
         # Load pre-trained model
         print("loading model from: ", f'./models/diff_ae_{args.model_type}_{args.adj_max_size}_{args.z_dim}_{args.dataset}_best_epoch.pth', flush=True)
-        checkpoint = torch.load(f'./models/diff_ae_{args.model_type}_{args.adj_max_size}_{args.z_dim}_{args.dataset}_best_epoch.pth')
+        checkpoint = torch.load(f'./models/diff_ae_{args.model_type}_{args.adj_max_size}_{args.z_dim}_{args.dataset}_best_epoch.pth', map_location=device)
         model.load_state_dict(checkpoint['state_dict'])
         
         evaluate(model, eval_loader, -1, device=device, use_middle_blk=bool(args.use_middle_blk))

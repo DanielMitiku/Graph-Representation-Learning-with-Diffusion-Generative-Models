@@ -1,0 +1,10 @@
+# Logs
+eval.log
+eval.err
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+data/
