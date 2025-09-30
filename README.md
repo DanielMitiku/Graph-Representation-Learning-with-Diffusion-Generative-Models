@@ -19,7 +19,7 @@ python train_gnn_diffae2.py --model_type="beatsganunet" --dataset="IMDB-BINARY" 
 To evaluate the model:
 
 ```bash
-nohup python train_gnn_diffae2.py --model_type="beatsganunet" --dataset="IMDB-BINARY" --z_dim=64 --adj_max_size=64 --use_middle_blk=1 --epochs=200 --eval_only=1 1>eval.log 2>eval.err
+python train_gnn_diffae2.py --model_type="beatsganunet" --dataset="IMDB-BINARY" --z_dim=64 --adj_max_size=64 --use_middle_blk=1 --eval_only=1 1>eval.log 2>eval.err
 ```
 
 Make sure the model is saved in the './models' directory. To use another dataset, you can change the dataset name in the args. For example, to train the PROTEINS dataset, you can:
@@ -31,6 +31,6 @@ python train_gnn_diffae2.py --model_type="beatsganunet" --dataset="PROTEINS" --z
 To evaluate the PROTEINS dataset, you can:
 
 ```bash
-nohup python train_gnn_diffae2.py --model_type="beatsganunet" --dataset="PROTEINS" --z_dim=64 --adj_max_size=64 --use_middle_blk=1 --epochs=200 --eval_only=1 1>eval.log 2>eval.err
+python train_gnn_diffae2.py --model_type="beatsganunet" --dataset="PROTEINS" --z_dim=64 --adj_max_size=64 --use_middle_blk=1 --eval_only=1 1>eval.log 2>eval.err
 ```
 
