@@ -1,0 +1,9 @@
+torch==2.2.1
+numpy==1.26.4
+torchvision
+torch-scatter==2.1.2
+torch-geometric==2.0.3
+matplotlib
+scikit-learn
+networkx==3.1
+torch_sparse==0.6.18
